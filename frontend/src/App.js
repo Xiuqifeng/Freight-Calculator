@@ -69,7 +69,7 @@ export default function FreightForm() {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://freight-calculator.onrender.com", {
+      const response = await axios.post("https://freight-calculator.onrender.com/calculate", {
         items: items.map(({ sku, qty }) => ({
           sku,
           qty: parseInt(qty) || 0,
