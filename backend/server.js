@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 const AL_WAREHOUSE = '35640';
 const CA_WAREHOUSE = '95828';
-const FREIGHTVIEW_API_KEY = 'nUCYnl3FGJZXt8uV6Jgi9JuCysM1iVhAypvtdxMhnjDmI9HQFLh';
+const FREIGHTVIEW_API_KEY = process.env.FREIGHTVIEW_API_KEY;
 
 app.post('/calculate', async (req, res) => {
     const { items, warehouses, destination } = req.body;
