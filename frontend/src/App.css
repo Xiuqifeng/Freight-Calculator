@@ -1,0 +1,178 @@
+/* === Reset & Base Layout === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #e0f0ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 40px;
+  margin-right: 16px;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  color: #0077cc;
+  margin: 0;
+}
+
+/* === Main Container === */
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 50px auto 100px;
+  padding: 5px 28px 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Titles & Sections === */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.section {
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* === Items & Buttons === */
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.add-item-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.rect-plus-button,
+.rect-minus-button {
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.rect-plus-button {
+  padding: 13px 16px;
+  background-color: #0077cc;
+  color: white;
+}
+
+.rect-plus-button:hover {
+  background-color: #005fa3;
+}
+
+.rect-minus-button {
+  padding: 6px 12px;
+  height: 40px;
+  font-size: 0.8rem;
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.rect-minus-button:hover {
+  background-color: #e33e3e;
+}
+
+.submit-button {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+/* === Spinner === */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* === Results Section === */
+.result-box {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #f0f8ff;
+  border: 1px solid #d0e0f0;
+  border-radius: 10px;
+}
+
+.warehouse-quotes {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.quote-box {
+  flex: 1;
+  padding: 16px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+/* === Errors === */
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+/* === Footer === */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 0.8rem;
+}
+
+
+
+
+
